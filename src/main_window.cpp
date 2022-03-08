@@ -807,7 +807,7 @@ void MainWindow::slot_speed_x(double x) {
     speedDashBoard->set_gear(DashBoard::kGear_N);
   }
   QString number = QString::number(abs(x * 100)).mid(0, 2);
-  if (number[1] == ".") {
+  if (number[1] == '.') {
     number = number.mid(0, 1);
   }
   ui.label_speed->setText(number);
